@@ -8,8 +8,7 @@ import thumbnail5 from '../../assets/thumbnail5.png'
 import thumbnail6 from '../../assets/thumbnail6.png'
 import thumbnail7 from '../../assets/thumbnail7.png'
 import thumbnail8 from '../../assets/thumbnail8.png'
-import {  value_converter } from '../../data'
-import {API_KEY} from '../../key.js'
+import { API_KEY, value_converter } from '../../data'
 import { Link } from 'react-router-dom'
 
 const Recommended = ({categoryId}) => {

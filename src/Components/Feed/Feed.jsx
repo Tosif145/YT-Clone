@@ -11,8 +11,7 @@ import thumbnail8 from '../../assets/thumbnail8.png'
 
 import { Link } from 'react-router-dom'
 
-import { value_converter } from '../../data'
-import {API_KEY} from '../../key.js'
+import { API_KEY, value_converter } from '../../data'
 import moment from 'moment'
 
 const Feed = ({category}) => {
@@ -35,7 +34,7 @@ const Feed = ({category}) => {
     <div className="feed">
       {data.map( (item, idx) => {
         return(
-          <Link key={idx} to={`/video/${item.snippet.categoryId}/${item.id}`} className='card'>
+          <Link to={`/video/${item.snippet.categoryId}/${item.id}`} className='card'>
             <img src={item.snippet.thumbnails.medium.url} alt="" />
             <h2>{item.snippet.title}</h2>
             <h3>{item.snippet.channelTitle}</h3>
